@@ -7,7 +7,7 @@ input.onButtonPressed(Button.A, function () {
             . . . . .
             . . . . .
             `)
-        basic.pause(100)
+        basic.pause(500)
         basic.showLeds(`
             . . . . .
             . . # . .
@@ -15,7 +15,7 @@ input.onButtonPressed(Button.A, function () {
             . . # . .
             . . . . .
             `)
-        basic.pause(100)
+        basic.pause(500)
         basic.showLeds(`
             . . # . .
             . # . # .
@@ -23,7 +23,7 @@ input.onButtonPressed(Button.A, function () {
             . # . # .
             . . # . .
             `)
-        basic.pause(100)
+        basic.pause(500)
         basic.showLeds(`
             . . # . .
             . # . # .
@@ -31,7 +31,7 @@ input.onButtonPressed(Button.A, function () {
             . # . # .
             . . # . .
             `)
-        basic.pause(100)
+        basic.pause(500)
         basic.showLeds(`
             . . . . .
             . . # . .
@@ -51,17 +51,16 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
-	
+    for (let index = 0; index < 6; index++) {
+        basic.showIcon(IconNames.Duck)
+        basic.pause(500)
+        basic.showLeds(`
+            . . . . .
+            . # # . .
+            # # # . .
+            . # # # #
+            . # # # .
+            `)
+        basic.pause(500)
+    }
 })
-while (true) {
-    basic.showIcon(IconNames.Duck)
-    basic.pause(500)
-    basic.showLeds(`
-        . . . . .
-        . # # . .
-        # # # . .
-        . # # # #
-        . # # # .
-        `)
-    basic.pause(500)
-}
